@@ -15,10 +15,6 @@ import Login from './Components/Login/Login';
 import Navbar from './Components/Navbar/Navbar';
 import Sign_Up from './Components/Sign_Up/Sign_Up';
 
-
-
-
-
 // import InstantConsultation from './Components/InstantConsultation/InstantConsultation';
 // import ProfileForm from './Components/ProfileCard/ProfileForm';
 // import ReportsLayout from './Components/ReportsLayout/ReportsLayout';
@@ -48,18 +44,11 @@ function App() {
   <Route path='/reports' element={<ReportsLayout/>} /> */}
   {/* <Route path='/login' element={<Login/>}/> */} 
 
-
-
- 
-
 </Routes> 
 {/* </Notification> */}
 
 </BrowserRouter> 
-
  
-
-   
 
   ); 
 
