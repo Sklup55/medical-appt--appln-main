@@ -61,6 +61,7 @@ function Sign_Up() {
             <div className="form-group">
               <label htmlFor="password">Password</label>
               <input
+                type="password"
                 name="password"
                 id="password"
                 required
@@ -68,3 +69,13 @@ function Sign_Up() {
                 placeholder="Enter your password"
                 aria-describedby="helpId"
               />
+            </div>
+            {/* Rest of the form */}
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Sign_Up;

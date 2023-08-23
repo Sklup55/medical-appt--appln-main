@@ -45,10 +45,12 @@ function Login() {
                 aria-describedby="helpId"
               />
             </div>
-            <div className="btn-group">
-              <button type="submit" className="btn btn-primary mb-2 mr-1 waves-effect waves-light">
-                Login
-              </button>
-              <button type="reset" className="btn btn-danger mb-2 waves-effect waves-light">
-                Reset
-              </button
+            {/* Rest of the form */}
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Login;
