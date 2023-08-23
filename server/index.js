@@ -9,7 +9,6 @@ app.set('view engine','ejs')
 app.use(express.static('public'))
 
 const PORT = process.env.PORT || 8181;
-const doctorsDetail=require('./models/doctors')
 
 
 // Middleware
@@ -26,17 +25,6 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.get('/doctors',async(req,res)=>{
-  try{
-      const getDoctors=await doctorsDetail.find({});
-      res.send(getDoctors)
-  }catch(e){
-      console.log(e);
-  }
-})
-app.get('/doctorimage',(req,res)=>{
-  res.render('index')
-})
 
 
   // Start the server
