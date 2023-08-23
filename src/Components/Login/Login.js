@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Login.css';
 
 function Login() {
@@ -14,11 +13,7 @@ function Login() {
           <h2>Login</h2>
         </div>
         <div className="login-text">
-          Are you a new member?{' '}
-          <Link to="/signup" style={{ color: '#2190FF' }}>
-            {' '}
-            Sign Up Here
-          </Link>
+          Are you a new member? Sign Up Here
         </div>
         <br />
         <div className="login-form">
