@@ -9,6 +9,9 @@ import FindDoctorSearch from './Components/FindDoctorSearch/FindDoctorSearch';
 import DoctorBook from './Components/DoctorCard/DoctorBook';
 import Notification from './Components/Notification/Notification';
 import ReviewForm from './Components/ReviewForm/ReviewForm';
+import ProfileForm from './Components/ProfileCard/ProfileCard';
+import ReportsLayout from './Components/ReportsLayout/ReportsLayout';
+import { Landing_Page } from './Components/Landing_Page/LandingPage';
 
 
 function App() {
@@ -21,6 +24,8 @@ function App() {
       
       <Routes>
 
+         <Route path='/' element={<Landing_Page/>}/>
+
         <Route path="/signup" element={<SignUp />} /> {/* Define the route for Sign Up */}
 
         <Route path="/login" element={<Login />} /> {/* Define the route for Login */}
@@ -32,6 +37,11 @@ function App() {
         <Route path="/search/doctors" element={<DoctorBook/>} />
 
         <Route path='/reviews' element={<ReviewForm/>}/>
+
+
+        <Route path='/profile' element={<ProfileForm/>} />
+        
+        <Route path='/reports' element={<ReportsLayout/>} />
 
       </Routes>
 
