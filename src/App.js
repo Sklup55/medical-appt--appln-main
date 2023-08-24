@@ -7,12 +7,17 @@ import Navbar from './Components/Navbar/Navbar';
 import InstantConsultation from './Components/InstantConsultation/InstantConsultation';
 import FindDoctorSearch from './Components/FindDoctorSearch/FindDoctorSearch';
 import DoctorBook from './Components/DoctorCard/DoctorBook';
+import Notification from './Components/Notification/Notification';
 
 
 function App() {
   return (
     <BrowserRouter>
+
       <Navbar />
+
+      <Notification>
+      
       <Routes>
 
         <Route path="/signup" element={<SignUp />} /> {/* Define the route for Sign Up */}
@@ -25,11 +30,10 @@ function App() {
         
         <Route path="/search/doctors" element={<DoctorBook/>} />
 
-
-
-
-
       </Routes>
+
+      </Notification>
+
     </BrowserRouter>
   );
 }
