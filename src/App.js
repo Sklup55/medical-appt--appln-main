@@ -4,6 +4,8 @@ import './App.css';
 import Login from './Components/Login/Login';
 import SignUp from './Components/Sign_Up/Sign_Up';
 import Navbar from './Components/Navbar/Navbar';
+import InstantConsultation from './Components/InstantConsultation/InstantConsultation';
+
 
 function App() {
   return (
@@ -13,6 +15,10 @@ function App() {
 
         <Route path="/signup" element={<SignUp />} /> {/* Define the route for Sign Up */}
         <Route path="/login" element={<Login />} /> {/* Define the route for Login */}
+
+        <Route path="/instant-consultation" element={<InstantConsultation/>} /> {/* Define the route for Login */}
+
+
       </Routes>
     </BrowserRouter>
   );
